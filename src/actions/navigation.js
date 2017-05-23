@@ -3,6 +3,7 @@ import KeyMirror from 'keymirror';
 export const Routes = KeyMirror({
     'HOME': null,
     'ABOUT': null,
+    'AUTHORS': null,
 });
 
 export const NavigationActionTypes = {
@@ -40,3 +41,5 @@ export const goBack = () => ({
 // GO-TO ACTIONS
 
 export const goToAbout = goToScene(Routes.ABOUT);
+
+export const goToAuthors = goToScene(Routes.AUTHORS);

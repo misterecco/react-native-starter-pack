@@ -4,6 +4,7 @@ import {Routes} from '../actions/navigation';
 import {Transitioner} from 'react-navigation';
 import Home from './Home';
 import About from './About';
+import Authors from './Authors';
 
 import {
     Animated,
@@ -87,6 +88,8 @@ class Main extends React.Component {
                 return <Home {...this.props}/>;
             case Routes.ABOUT:
                 return <About {...this.props}/>;
+            case Routes.AUTHORS:
+                return <Authors {...this.props}/>;
         }
     };
 

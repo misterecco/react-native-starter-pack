@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {
-    Button,
     StyleSheet,
     Text,
     View
@@ -26,16 +25,12 @@ const styles = StyleSheet.create({
     },
 });
 
-const Home = (props) => (
+const Authors = (props) => (
     <View style={styles.container}>
         <Text style={styles.welcome}>
-            Hello in React Native Starter Pack!
+            Authors
         </Text>
-        <Button title="About the app"
-                onPress={props.goToAbout}/>
-        <Button title="About the authors"
-                onPress={props.goToAuthors}/>
     </View>
 );
 
-export default Home;
+export default Authors;
